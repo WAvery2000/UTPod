@@ -19,20 +19,20 @@ class Song
         int size;
     public:
         // Constructor for all three song attributes
-        Song(string title, string artist, int size);
+        Song(string _title, string _artist, int _size);
 
         string getTitle() const
-            { return title; };
+            { return title; }
 
         string getArtist() const
-            { return artist; };
+            { return artist; }
 
         int getSize() const
-            { return size; };
+            { return size; }
 
-        void setTitle(string newTitle);
-        void setArist(string newArtist);
-        void setSize(string newSize);
+        void setTitle(string _title);
+        void setArtist(string _artist);
+        void setSize(int _size);
 
         bool operator >(Song const &rhs);
         bool operator <(Song const &rhs);
