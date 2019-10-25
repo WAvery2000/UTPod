@@ -29,15 +29,16 @@ void Song::setSize(int _size){
 }
 
 bool Song::operator >(Song const &rhs){
+    if(artist.compare(rhs.artist) > 0)
+        return true;
+    if(artist.compare(rhs.artist) < 0)
+        return false;
+
     if(title.compare(rhs.title) > 0)
         return true;
     if(title.compare(rhs.title) < 0)
         return false;
     
-    if(artist.compare(rhs.artist) > 0)
-        return true;
-    if(artist.compare(rhs.artist) < 0)
-        return false;
 
     if(size > rhs.size)
         return true;
@@ -46,16 +47,16 @@ bool Song::operator >(Song const &rhs){
 }
 
 bool Song::operator <(Song const &rhs){
+    if(artist.compare(rhs.artist) < 0)
+        return true;
+    if(artist.compare(rhs.artist) > 0)
+        return false;
+    
     if(title.compare(rhs.title) < 0)
         return true;
     if(title.compare(rhs.title) > 0)
         return false;
     
-    if(artist.compare(rhs.artist) < 0)
-        return true;
-    if(artist.compare(rhs.artist) > 0)
-        return false;
-
     if(size < rhs.size)
         return true;
 
