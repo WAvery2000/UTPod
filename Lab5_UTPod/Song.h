@@ -18,6 +18,9 @@ class Song
         string artist;
         int size;
     public:
+	// Song for new struct
+	Song();
+
         // Constructor for all three song attributes
         Song(string _title, string _artist, int _size);
 

@@ -10,6 +10,12 @@
 
 using namespace std;
 
+Song::Song(){
+    title = "-1";
+    artist = "-1";
+    size = -1;
+}
+
 Song::Song(string t, string a, int s){
     title = t;
     artist = a;
