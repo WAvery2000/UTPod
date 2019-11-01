@@ -1,8 +1,8 @@
 // Name: William Avery and John Buchanan
 // Date: October 20, 2019
 // Section: 16040
-// Email: williamaavery@utexas.edu and
-// EEID: waa493 and
+// Email: williamaavery@utexas.edu and jackthefirst@utexas.edu
+// EEID: waa493 and jcb5464
 
 #ifndef SONG_H
 #define SONG_H
